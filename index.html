@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Hadhee Rahman</title>
+    <meta name="description" content="Welcome to my portfolio" />
+    <meta name="author" content="Hadhee Rahman" />
+    <meta property="og:title" content="Hadhee Rahman Portfolio" />
+    <meta property="og:type" content="portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital@0;1&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container sm">
+      <main>
+        <header>
+          <div>
+            <h1 class="text-center py-2 mt-4">Hadhee Rahman</h1>
+            <p class="text-center">Full Stack Developer</p>
+          </div>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutme"
+                >Aboutme</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </header>
+
+        <!-- About Section -->
+        <section id="aboutme">
+          <div class="text-center d-flex flex-column">
+            <img
+              src="Assests/profile.jpg"
+              class="rounded mx-auto d-block mt-5 mb-5"
+              width="200"
+              alt="Hadhee Rahman"
+            />
+            <div>
+              <h2>About Me</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ut
+                quibusdam? Dignissimos atque delectus, vero voluptatibus esse
+                perferendis laudantium distinctio et excepturi cum praesentium
+                blanditiis minima veniam autem sit animi?
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2 class="mt-5 mb-5 text-center">My Projects</h2>
+          <div
+            class="d-flex d-sm-flex justify-content-center text-center flex-wrap gap-4"
+          >
+            <article>
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="Assests/banks.jpeg"
+                  class="card-img-top"
+                  alt="Bank Application"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bank Application</h5>
+                  <p class="card-text">
+                    A basic bank application to transfer, loan and check bank
+                    balance in our account.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </article>
+
+            <article>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="Assests/guess game.png"
+                  class="card-img-top"
+                  alt="number guessing game"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Guess Number Game</h5>
+                  <p class="card-text">
+                    A number guessing game, where a random number is generated
+                    and one should guess number through input provided.
+                  </p>
+                  <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h2 class="text-center mt-4 mb-4">Contact Me</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="name">Name:</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="email">Email:</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Your Email"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <label for="subject">Subject:</label>
+                <input
+                  id="subject"
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  placeholder="Type your message"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="text-center mt-4">
+                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-outline-secondary">
+                  reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <hr />
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <p>&copy; Hadhee Rahman 2025 <span>All rights reserved.</span></p>
+      <a href="#" class="text-decoration-none">Back to top</a>
+    </footer>
+  </body>
+</html>
